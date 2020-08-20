@@ -2,6 +2,7 @@
 The code of paper: Community enhanced anomaly detection on attributed network
 
 ## CEAD:Community Enhanced Anomaly Detection on Attributed Networks
+![](https://img-blog.csdnimg.cn/20200820155625522.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1b3h1ZXhpb25n,size_16,color_FFFFFF,t_70)
 
 This a Tensorflow implementation of the CEAD algorithm, which utilizes the captured community structure information of network to alleviate the over-smoothing node representation for anomaly detection. 
 ### ABSTRACT:
@@ -46,4 +47,6 @@ reconstruction to detect anomalous nodes, the node 2 with complex structure rela
 #### output: the AUC for anomaly detection
 #### Run
      python run.py
+#### Anomaly detection result on AUC values
+![](https://img-blog.csdnimg.cn/20200820155658321.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1b3h1ZXhpb25n,size_16,color_FFFFFF,t_70)
 
