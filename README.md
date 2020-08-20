@@ -2,9 +2,12 @@
 The code of paper: Community enhanced anomaly detection on attributed network
 
 ## CEAD:Community Enhanced Anomaly Detection on Attributed Networks
-![](https://img-blog.csdnimg.cn/20200820155625522.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1b3h1ZXhpb25n,size_16,color_FFFFFF,t_70)
-
 This a Tensorflow implementation of the CEAD algorithm, which utilizes the captured community structure information of network to alleviate the over-smoothing node representation for anomaly detection. 
+
+### The framework of CEAD
+![](https://img-blog.csdnimg.cn/20200820155625522.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2x1b3h1ZXhpb25n,size_16,color_FFFFFF,t_70)
+The framework of CEAD consists of three major modules. For the autoencoder module, we utilize the autoencoder to encode and decode the modularity matrix of network. For the tGCN module, we use the topology structure and nodal attributes as the input of the GCN model. Simultaneously, we introduce the gateway that propagates the representation of each hidden layer in the autoencoder into the representation of its corresponding hidden layer in tGCN, and design the KL loss to guide the tGCN module. For the reconstruction module, we design the structure decoder and attribute decoder to reconstruct the
+topology structure and nodal attributes respectively, and compute the ranking of anomalies according to the corresponding anomaly scores.
 ### ABSTRACT:
 Anomaly detection on attributed networks aims to distinguish nodes whose patterns or behaviors deviate significantly from the majority of reference nodes. Recently, anomaly detection has attracted a surge of research attention due to its broad real-world applications such as suspicious account detection in social media, abuse monitoring in healthcare systems and financial fraud monitoring. Anomaly detection methods with graph neural networks, as the mainstream techniques, achieve state-of-the-art performance. However, when working on attributed networks, they are easily encountered with over-smoothing problem in respect of node representation, which makes the anomalous nodes less distinguishable from the majority nodes within the community, and brings difficulties to improving the performance of anomaly detection. Besides, how to extract community structure information of the network to
 spot anomalous nodes is another tough challenge. 
