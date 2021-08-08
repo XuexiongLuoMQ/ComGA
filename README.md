@@ -49,5 +49,5 @@ The framework of ComGA consists of three major modules. For the autoencoder modu
 #### Run
      python run.py
 #### Anomaly detection result on AUC values
-![Image text](https://github.com/DASE4/paper-figure/blob/master/anexperiment.png)
+![Image](https://github.com/DASE4/paper-figure/blob/master/anexperiment.png)
 
