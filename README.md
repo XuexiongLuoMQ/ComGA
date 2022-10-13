@@ -55,6 +55,15 @@ distance ||xi − xj ||2. Afterwards, we then change the attributes xi of node i
 #### output: the AUC for anomaly detection
 #### Run
      python run.py
+#### If you find that this code is useful for your research, please cite our paper:
+        @inproceedings{luo2022comga,
+        title={ComGA: Community-Aware Attributed Graph Anomaly Detection},
+        author={Luo, Xuexiong and Wu, Jia and Beheshti, Amin and Yang, Jian and Zhang, Xiankun and Wang, Yuan and Xue, Shan},
+        booktitle={Proceedings of the Fifteenth ACM International Conference on Web Search and Data Mining},
+        pages={657--665},
+        year={2022}
+        }
+ 
 
 
 
